@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins";
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100vh;
+  }
+  .sidebar {
+    position: fixed;
+    left: 0px;
+    width: 250px;
+    height: 100%;
+    background: #FFB0B0;
+    transition: all .5s ease;
+  }
+  .sidebar header {
+    font-size: 20px;
+    font-weight: 700;
+    color: #CA5959;
+    line-height: 70px;
+    text-align: center;
+    background:  #F99C9C;
+    user-select: none;
+  }
+  .sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    font-size:15px;
+    color: #CA5959;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #FFE1E1;
+    transition: .4s;
+  }
+  ul li:hover a{
+    padding-left: 50px;
+  }
+  .sidebar ul a i{
+    margin-right: 16px;
+  }
+  #check{
+    display: none;
+  }
+  label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+  }
+  label #btn{
+    left: 250px;
+    top: 3px;
+    font-size: 35px;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s;
+  }
+  label #cancel{
+    z-index: 1111;
+    left: 195px;
+    font-size: 30px;
+    color: white;
+    padding: 0px 25px;
+    transition: all .5s ease;
+  }
+  #check:checked ~ .sidebar{
+    left: -250px;
+  }
+  #check:checked ~ label #btn{
+    left: 40px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  #check:checked ~ label #cancel{
+    left: -195px;
+  }
+  #check:checked ~ section{
+    margin-left: 0px;
+  }
+
+  .tngah{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.container1{
+    background: linear-gradient(to top, #E86262, #FFB0B0);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.bar{
+    display: flex;
+    /* position: fixed; */
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    background: transparent ;
+}
+.bar1{
+    color: #CA5959;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 5px 0px 5px 80px;
+    justify-content: center;
+    align-items: center;
+    cursor: no-drop;
+}
+.logout{
+    width: 90px;
+    border: 10px;
+    padding: 7px 5px 5px 5px;
+    margin: 10px 50px 10px 0px;
+    background-color: #CA5959;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.logout:hover{
+    background-color: #941414;
+}
+.logout:active{
+    background-color: pink;
+}
+.hider{
+    color: #FFE1E1;
+    font-size: 30px;
+    font-weight: 700;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow: 0 0px 15px #c13232;
+    cursor: not-allowed;
+}
+.hider:hover{
+    background-color: #CA5959;
+}
+.tambah{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    padding: 30px 10px 10px 10px;
+}
+.tadd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin-right: 200px;
+    border: 0 solid #FFE1E1;
+    padding: 10px;
+    background-color: #e39393;
+    color: #FFE1E1;
+    border-radius: 10px;
+    font-size: 14px;
+    gap: 10px;
+    box-shadow: 0 0px 10px white;
+    cursor: cell;
+}
+.tadd:hover{
+    background-color: #eb6969;
+}
+table {
+    /* margin-top: 30px; */
+    border-collapse: collapse;
+    width: 100%;
+    color: #000;
+    background-color: #FFE1E1;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+th {
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 20px;
+}
+td {
+    text-align: center;
+    padding: 10px;
+}
+tr:nth-child(even) {
+    background-color: #FFB0B0;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tabel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    padding-top: 20px;
+    color: #FFE1E1;
+}
+.btncrud{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.nama1{
+    text-align: start;
+    padding: 10px;
+}
+.tview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border: 0 solid #ffffff;
+    padding: 12px;
+    background-color: #E86262;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    gap: 5px;
+}
+.tview:hover{
+    background-color: #c13232;
+}
+.tupd{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  border: 0 solid #FFE1E1;
+  padding: 10px;
+  background-color: rgb(89, 89, 217);
+  color: #FFE1E1;
+  border-radius: 10px;
+  font-size: 14px;
+  gap: 10px;
+  box-shadow: 0 0px 10px white;
+  cursor: pointer;
+}
+.tupd:hover{
+    background-color: rgb(74, 74, 135);
+}
+.tdlt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  border: 0 solid #FFE1E1;
+  padding: 10px;
+  background-color: rgb(216, 73, 73);
+  color: #FFE1E1;
+  border-radius: 10px;
+  font-size: 14px;
+  gap: 10px;
+  box-shadow: 0 0px 10px white;
+  cursor: pointer;
+}
+.tdlt:hover{
+    background-color: #af0101;
+}
+.bar2{
+    color: #CA5959;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: no-drop;
+}
+.logout2{
+    width: 100px;
+    border: 10px;
+    padding: 10px 15px 10px 15px;
+    margin: 10px;
+    background-color: #CA5959;
+    box-shadow: 0 0px 15px white;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.logout2:hover{
+    background-color: #941414;
+}
+.logout2:active{
+    background-color: pink;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+  background-color: #CA5959;
+}

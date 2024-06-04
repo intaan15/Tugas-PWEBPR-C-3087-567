@@ -1,0 +1,138 @@
+*{
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(to top, #E86262, #FFB0B0);
+}
+.tngah{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    background-color: #FFB0B0;
+    width: 1010px;
+    height: 529px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    /* padding: 100px; */
+    /* gap: 15px; */
+}
+
+.kiri{
+    background-image: url('../img/bg1.png');
+    display: flex;
+    margin: 50px;
+    /* flex-direction: column; */
+    /* background-color: aquamarine; */
+    width: 450px;
+    height: 529px;
+}
+.kiri p{
+    /* display: flex; */
+    font-size: 58px;
+    font-weight: 800;
+    text-align: center;
+    justify-content: center;
+    margin: 50px 50px 50px 0px;
+    padding: 150px 50px 0px 50px;
+    color: #CA5959;
+    /* background-color: #CA5959; */
+}
+.kanan{
+    display: flex;
+    flex-direction: column;
+    /* background-color: blueviolet; */
+}
+.isikanan{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFE1E1;
+    border-radius: 30px;
+    width: 505px;
+    height: 529px;
+    margin: 0;
+}
+.regis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 40px 30px 30px 30px;
+}
+.isikanan .formregis{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 10px 30px 10px 30px;
+}
+.formregis label{
+    display: block;
+    margin-bottom: 5px;
+}
+.formregis input,
+.formregis textarea{
+    width: 100;
+    padding: 10px;
+    padding-right: 40px;
+    border: 2px solid #CA5959;
+    background-color: #fff;
+    box-shadow: 0 5px 10px #FFB0B0;
+    border-radius: 10px;
+    outline: #fff;
+}
+.formregis .icon{
+    position: absolute;
+    right: 10px;
+    top: 71%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: transparent;
+    pointer-events: none;
+}
+.tanya{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.btnsi{
+    width: 30%;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin: 20px 50px 20px 180px;
+    background-color: #CA5959;
+    box-shadow: 0 5px 10px #FFB0B0;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btnsi:hover{
+    background-color: #962424;
+}
+.btnsi:active{
+    background-color: #FFB0B0;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    background-color: #CA5959;
+}
